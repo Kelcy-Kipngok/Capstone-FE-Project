@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #5e5a5a;
+  overflow-x: hidden;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: #5e5a5a;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6366f1;
+  border-radius: 10px;
+}
+
+/* Dark Mode Smooth Transition */
+html {
+  scroll-behavior: smooth;
+}
+
+.dark body {
+  background-color: #5e5a5a;
+  color: #5e5a5a;
+}
