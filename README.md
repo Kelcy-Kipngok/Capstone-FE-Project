@@ -1,16 +1,54 @@
-# React + Vite
+📚 Book Explorer — React Application
+🔍 Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Book Explorer is a responsive web application built with React that allows users to search for books by title, author, or category using the Open Library API.
+It includes a user authentication system (login/signup), a favorites feature, and protected routes to ensure only logged-in users can access the main content.
 
-Currently, two official plugins are available:
+The app aims to provide an intuitive and visually appealing interface for discovering and managing books of interest.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧠 Features
+🔐 Authentication
 
-## React Compiler
+Users can sign up and log in using a simple form interface.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Session is persisted via localStorage.
 
-## Expanding the ESLint configuration
+Displays a personalized greeting — “Welcome, username” — when logged in.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Only logged-in users can access book listings, favorites, and details pages.
+
+📖 Book Search
+
+Search by title or author.
+
+Filter books by category (Fiction, Science, Fantasy, History, Biography).
+
+Paginated results using the Open Library API.
+
+Displays book covers, authors, publishers, and publication years.
+
+❤️ Favorites
+
+Add or remove books from a Favorites List.
+
+Favorites are stored locally to persist even after refresh.
+
+Access favorites easily via a dedicated page.
+
+🧭 Navigation
+
+Responsive Header and Footer components.
+
+Dynamic search bar that hides on login/signup pages.
+
+Logo click redirects to the correct page depending on login state.
+
+Protected routes ensure only authenticated users can view book content.
+
+💅 User Interface
+
+Built with Tailwind CSS for modern, responsive styling.
+
+Clean layout, accessible components, and consistent color scheme.
+
+Styled buttons, cards, and modals for a professional look.
